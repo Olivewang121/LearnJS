@@ -3,15 +3,14 @@
 <head>
     
     <script> 
-    var obj={
-        uname:"钱多",
-        sex:"female",
-        age:0,
-        sayHi:function(){
-            console.log("hi~~");
-        }
-    }   
-    console.log(obj.uname);
+    var obj= new Object();
+    obj.name='钱多';
+    obj.sex='女';
+    obj.age=0;
+    obj.sayHi=function(){
+        console.log('hi~~');
+    }
+    console.log(obj.name);
     console.log(obj['age']);
     obj.sayHi();
     </script>
