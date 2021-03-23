@@ -1,23 +1,19 @@
 <html>
 
 <head>
-    
     <script> 
-    function rongyao(name,type,blood,attack){
-        this.uname =name;
-        this.type=type;
-        this.blood=blood;
-        this.attack=function(attack){
-            console.log(attack);
-        }
+    var obj= new Object();
+    obj.name='钱多';
+    obj.sex='女';
+    obj.age=0;
+    obj.sayHi=function(){
+        console.log('hi~~');
     }
-    var lp=new rongyao('廉颇','力量型',500);
-    lp.attack('近战');
-    console.log(lp.uname);
-    console.log(lp['blood']);
-    var hy=new rongyao('后羿','力量型',700);
-    hy.attack('远程');
-    console.log(hy['type']);
+    console.log(obj);
+    for (var k in obj){
+        console.log(k);
+        console.log(obj[k]);
+    }
 
     </script>
 
