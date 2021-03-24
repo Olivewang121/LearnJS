@@ -2,19 +2,20 @@
 
 <head>
     <script> 
-    var obj= new Object();
-    obj.name='钱多';
-    obj.sex='女';
-    obj.age=0;
-    obj.sayHi=function(){
-        console.log('hi~~');
+    var computer= {
+        color: "white",
+        weight: 1000,
+        brand: "Lenova",
+        model:"sdfdgdfg",
+        gongneng: function(){
+            console.log("看电影 听音乐 打游戏 敲代码");
+        }
     }
-    console.log(obj);
-    for (var k in obj){
+    for(k in computer){
         console.log(k);
-        console.log(obj[k]);
+        console.log(computer[k]);
     }
-
+    computer.gongneng();
     </script>
 
     
