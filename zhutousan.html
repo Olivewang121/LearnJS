@@ -2,20 +2,21 @@
 
 <head>
     <script> 
-    var computer= {
-        color: "white",
-        weight: 1000,
-        brand: "Lenova",
-        model:"sdfdgdfg",
-        gongneng: function(){
-            console.log("看电影 听音乐 打游戏 敲代码");
-        }
+    
+    function sort(arr){
+        for(i=0;i<arr.length-1;i++){
+            for(j=0;j<=arr.length-i-1;j++){
+                var temp=arr[j];
+                if (temp>arr[j+1]){
+                    arr[j]=arr[j+1];
+                    arr[j+1]=temp;
+                }
+            }
+        } return arr;
     }
-    for(k in computer){
-        console.log(k);
-        console.log(computer[k]);
-    }
-    computer.gongneng();
+    
+    var arr1=sort([5,4,98,45,1]);
+    console.log(arr1);
     </script>
 
     
