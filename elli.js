@@ -23,3 +23,12 @@ var myMath = {
         return min;
     },
 }
+
+//封装自己的数学对象PI和最大值和最小值
+function reverse(arr) {
+    var arrNew = [];
+    for (var i = arr.length - 1; i >= 0; i--) {
+        arrNew[arrNew.length] = arr[i];
+    }
+    return arrNew;
+}

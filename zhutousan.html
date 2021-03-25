@@ -1,15 +1,20 @@
 <html>
 
 <head>
-    <script src="elli.js"></script>
+    <script>
+        function getRandom(min,max){
+            return Math.floor(Math.random()*(max-min+1)+min);
+        }
+        var arr=['周一','周二','周三'];
+        console.log(arr[getRandom(0,arr.length-1)]);
+        
+
+    </script>
 </head>
 
 <body>
 
-    <script>
-        console.log(myMath.max(1, 2, 3, 4, 5));
-        console.log(myMath.PI);
-    </script>
+    
 </body>
 
 </html>
