@@ -2,37 +2,13 @@
 
 <head>
     <script>
-
-        
-        // var num = Math.floor(Math.random() * 10) + 1;
-        // while (true) {
-        //     var input = prompt('请输入1~10之间的一个数字:');
-        //     if (input > num) {
-        //         alert('你猜大了');
-        //     } else if (input < num) {
-        //         alert('你猜小了');
-        //     } else {
-        //         alert('恭喜你，猜对了');
-        //         break;
-        //     }
-        // }
-
-        var num = Math.floor(Math.random() * 50) + 1;
-        for(var i=1;i<=10;i++) {
-            var input = prompt('请输入1~50之间的一个数字:');
-            if (input > num) {
-                alert('你猜大了');
-            } else if (input < num) {
-                alert('你猜小了');
-            } else if (input==num) {
-                alert('恭喜你，猜对了');
-                break;
-            }
-            
-            }if(input!==num){
-                alert('对不起，10次机会已用完，请下次再来');
-        }
-
+        var date = new Date();
+        var year=date.getFullYear();
+        var month=date.getMonth();
+        var dates=date.getDate();
+        var day=date.getDay();
+        var arr=['星期天','星期一','星期二','星期三','星期四','星期五','星期六']
+        console.log('今天是'+year+'年'+month+1+'月'+dates+'日 '+arr[day]);
     </script>
 </head>
 
