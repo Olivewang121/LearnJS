@@ -2,19 +2,25 @@
 
 <head>
     <script>
-        function filter(arr) {
+        var arr=[4,21,65,8,12];
+        arr.sort();
+        console.log(arr);
+        
+        arr.sort(function(a,b){
+           // return a-b; 升序排列
+           return b-a; //降序排列
+        })
+        console.log(arr);
 
-            var arr1 = [];
-            for (var i = 0; i < arr.length; i++) 
-            {
-                if (arr[i] <= 2000) 
-                {
-                    arr1.push(arr[i]);
-                }
-            } return arr1;
+        // 也可以这样写
+        function compareNumbers(a,b){
+            return a-b;
         }
-        arr = [1500, 1200, 2000, 2100, 1800];
-        console.log(filter(arr));
+        var arr1= [6,56,8,2,10]
+        arr1.sort(compareNumbers);
+        console.log(arr1);
+
+
 
     </script>
 </head>
