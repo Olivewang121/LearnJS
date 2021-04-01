@@ -2,25 +2,38 @@
 
 <head>
     <script>
-        var arr=[4,21,65,8,12];
-        arr.sort();
-        console.log(arr);
-        
-        arr.sort(function(a,b){
-           // return a-b; 升序排列
-           return b-a; //降序排列
-        })
-        console.log(arr);
+        // function fn(arr){
+        //     var newArr=[];
+        //     for (var i=0;i<arr.length; i++){
+        //         if(arr.indexOf(arr[i])==i){
+        //             newArr.push(arr[i]);
+        //         }
+        //     }
+        //     return newArr;
+        // }
+        // console.log(fn([1,1,2,2,3,3]));
 
-        // 也可以这样写
-        function compareNumbers(a,b){
-            return a-b;
+        // function fn(arr){
+        //     var newArr =[];
+        //     arr.forEach(element => {
+        //         if(newArr.indexOf(element)==-1){
+        //             newArr.push(element);
+        //         }
+        //     });
+        //     return newArr;
+        // }
+        // console.log(fn([1,1,2,2,3,3,3]));
+
+        function fn(arr){
+            var newArr=[];
+            arr.forEach((element,index,array)=>{
+                if(array.indexOf(element)==index){
+                    newArr.push(element);
+                }
+            })
+            return newArr;
         }
-        var arr1= [6,56,8,2,10]
-        arr1.sort(compareNumbers);
-        console.log(arr1);
-
-
+        console.log(fn([1,1,2,2,3,3]));
 
     </script>
 </head>
