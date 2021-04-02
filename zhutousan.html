@@ -2,39 +2,26 @@
 
 <head>
     <script>
-        // function fn(arr){
-        //     var newArr=[];
-        //     for (var i=0;i<arr.length; i++){
-        //         if(arr.indexOf(arr[i])==i){
-        //             newArr.push(arr[i]);
-        //         }
-        //     }
-        //     return newArr;
-        // }
-        // console.log(fn([1,1,2,2,3,3]));
-
-        // function fn(arr){
-        //     var newArr =[];
-        //     arr.forEach(element => {
-        //         if(newArr.indexOf(element)==-1){
-        //             newArr.push(element);
-        //         }
-        //     });
-        //     return newArr;
-        // }
-        // console.log(fn([1,1,2,2,3,3,3]));
-
-        function fn(arr){
-            var newArr=[];
-            arr.forEach((element,index,array)=>{
-                if(array.indexOf(element)==index){
-                    newArr.push(element);
-                }
-            })
-            return newArr;
+    // function fn(arr){
+    //     var newArr=[];
+    //     for(var i=0;i<arr.length;i++){
+    //         if(arr[i]=='o'){
+    //             newArr.push(i);
+    //         }
+        
+    //     }return [newArr,newArr.length]
+    // }
+    // console.log(fn("dvgoohfoghjgojdsg"));
+        var str='gohgojfghjdopfhfghooo';
+        var index=str.indexOf('o');
+        var number=0;
+        while(index!==-1){
+            console.log(index);
+            number++;
+            index=str.indexOf('o',index+1);
         }
-        console.log(fn([1,1,2,2,3,3]));
-
+        
+        console.log(number);
     </script>
 </head>
 
