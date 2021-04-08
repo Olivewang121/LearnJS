@@ -13,7 +13,16 @@
             }
         }
         console.log(o);
-
+            var max=0;
+            var ch="";
+            for (var k in o){
+                if(o[k]>max){
+                    max=o[k];
+                    ch=k;
+                }
+            }
+            console.log(max);
+            console.log(ch);
         // function solution(str){
         //     var dict = new Object();
         //     str.split('').forEach(element => {
