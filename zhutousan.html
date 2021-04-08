@@ -2,26 +2,39 @@
 
 <head>
     <script>
-    // function fn(arr){
-    //     var newArr=[];
-    //     for(var i=0;i<arr.length;i++){
-    //         if(arr[i]=='o'){
-    //             newArr.push(i);
-    //         }
-        
-    //     }return [newArr,newArr.length]
-    // }
-    // console.log(fn("dvgoohfoghjgojdsg"));
-        var str='gohgojfghjdopfhfghooo';
-        var index=str.indexOf('o');
-        var number=0;
-        while(index!==-1){
-            console.log(index);
-            number++;
-            index=str.indexOf('o',index+1);
+        var str='fsdghtrhdfgtrhytju';
+        var o={};
+        for (var i=0;i<str.length;i++){
+            var chars=str.charAt(i);
+            if(o[chars]){
+                o[chars]++;
+            }else{
+                o[chars]=1;
+            }
         }
-        
-        console.log(number);
+        console.log(o);
+
+        // function solution(str){
+        //     var dict = new Object();
+        //     str.split('').forEach(element => {
+        //        if(dict[element]===undefined){
+        //            dict[element] = 1;
+        //        } else{
+        //            dict[element] +=1;
+        //        }
+        //     });
+        //     var flag='';
+        //     var max = 0;
+        //     for(var key in dict){
+        //         if(dict[key]>max){
+        //             max = dict[key];
+        //             flag=key;
+        //         }
+        //     }
+        //     return [flag,max]
+        // } 
+        // var str ="abdfdsfsdfsadfasdfasdf";
+        // console.log(solution(str));
     </script>
 </head>
 
