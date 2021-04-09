@@ -2,49 +2,13 @@
 
 <head>
     <script>
-        var str='fsdghtrhdfgtrhytju';
-        var o={};
-        for (var i=0;i<str.length;i++){
-            var chars=str.charAt(i);
-            if(o[chars]){
-                o[chars]++;
-            }else{
-                o[chars]=1;
-            }
+        var str1="fsdfdgdfgiohoigfdnklg";
+        while(str1.indexOf('f')!==-1){
+            str1=str1.replace('f','*');
         }
-        console.log(o);
-            var max=0;
-            var ch="";
-            for (var k in o){
-                if(o[k]>max){
-                    max=o[k];
-                    ch=k;
-                }
-            }
-            console.log(max);
-            console.log(ch);
-        // function solution(str){
-        //     var dict = new Object();
-        //     str.split('').forEach(element => {
-        //        if(dict[element]===undefined){
-        //            dict[element] = 1;
-        //        } else{
-        //            dict[element] +=1;
-        //        }
-        //     });
-        //     var flag='';
-        //     var max = 0;
-        //     for(var key in dict){
-        //         if(dict[key]>max){
-        //             max = dict[key];
-        //             flag=key;
-        //         }
-        //     }
-        //     return [flag,max]
-        // } 
-        // var str ="abdfdsfsdfsadfasdfasdf";
-        // console.log(solution(str));
+        console.log(str1);
     </script>
+    
 </head>
 
 <body>
