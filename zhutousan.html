@@ -2,25 +2,28 @@
 
 <head>
   <style>
-    div{
-      width: 200px;
-      height: 200px;
-      background-color: pink;
+    input{
+      color: #999;
     }
-    
   </style>
     
 </head>
 
 <body>
-
-<div id="color">
-</div>
+<input type="text" value="手机">
 <script>
-  var color=document.querySelector("div");
-  color.onclick=function(){
-    this.style.backgroundColor="purple";
-    this.style.width="250px";
+  var text=document.querySelector("input");
+  text.onfocus=function(){
+    if(this.value==="手机"){
+      this.value="";
+      this.style.color="#333";
+    }
+  }
+  text.onblur=function(){
+    if(this.value===''){
+      this.value='手机';
+      this.style.color='#999';
+    }
   }
 </script>
 
